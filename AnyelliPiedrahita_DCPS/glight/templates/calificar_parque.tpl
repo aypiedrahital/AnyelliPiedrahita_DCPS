@@ -14,7 +14,7 @@
                 <option value=5>5 - Alta</option>
         </select>
         <br />
-		<b>Seleccione Fecha: </b>
+		<b>Fecha: </b>
         <select name='fecha'>
 				<option value=1>Dia</option>
                 <option value=30> Mes</option>

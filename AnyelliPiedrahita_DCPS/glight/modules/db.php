@@ -245,7 +245,7 @@ class db
 				case "all": 
                                     $info=$this->get_data("SELECT * FROM parque;");
 			        break;
-                                case "alto":
+                                case "by_alto":
                                     $info=$this->get_data("SELECT * FROM parque WHERE nivel='Alto';");
                                 break;
 			}
