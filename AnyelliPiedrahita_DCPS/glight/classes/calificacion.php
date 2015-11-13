@@ -6,6 +6,8 @@ class calificacion extends object_standard
     
     protected $calificacion;
     protected $parque;
+	protected $fecha;
+	
 
     
     //components
@@ -15,7 +17,7 @@ class calificacion extends object_standard
     
     public function metadata()
     {
-        return array("calificacion"=>array(),
+        return array("calificacion"=>array(),"fecha"=>array(),
             "parque"=>array("forign_name"=>"c_p","foreign"=>"parque","foreign_attribute"=>"codigo"));
     }
     

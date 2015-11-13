@@ -112,10 +112,11 @@ class db
 			switch($options['lvl2'])
 			{
 				case "normal":
+									$fec=mysqli_real_escape_string($this->cn,$object->get('fecha'));
                                     $cal=mysqli_real_escape_string($this->cn,$object->get('calificacion'));
-                                    $hos=mysqli_real_escape_string($this->cn,$object->get('hospital'));
+                                    $hos=mysqli_real_escape_string($this->cn,$object->get('parque'));
 
-                                    $this->do_operation("INSERT INTO calificacion (calificacion, parque) VALUES ('$cal', '$hos');");
+                                    $this->do_operation("INSERT INTO calificacion (fecha, calificacion, parque) VALUES ('$fec', '$cal', '$hos');");
 
 			        break;
 			}
